@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <style>
+        h1 {
+            color: red;
+        }
+
+        #he {
+            color: orangered;
+        }
+
+        button {
+            width: 60px;
+            height: 30px;
+            cursor: pointer;
+            background-color: aqua;
+            font-size: large;
+
+        }
+
+        button:hover {
+            width: 80px;
+            height: 40px;
+        }
+    </style>
+</head>
+
+<body style="background-color: peachpuff;">
+    <center>
+        <h1>Counter</h1>
+        <button onclick="add()">+</button>
+        <h1 id="he">10</h1>
+        <button onclick="sub()">-</button>
+    </center>
+</body>
+<script>
+    function sub() {
+        var a = document.getElementById('he').innerHTML
+        let b = document.getElementById('he')
+        b.innerHTML = a - 1
+    }
+    function add() {
+        var a = document.getElementById('he').innerHTML
+        let c = document.getElementById('he')
+        c.innerHTML = parseInt(a) + 1
+    }
+
+</script>
+
+</html>
